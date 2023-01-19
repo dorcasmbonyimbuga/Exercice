@@ -1,0 +1,795 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+}
+body{
+    
+    font-family: 'source sans Pro', sans-serif;
+    line-height: 1.625;
+    margin: 0; 
+    color: #6f6f6f;
+}
+
+.header{
+    background: url(../IMAGES/eggs.jpg) center center / cover no-repeat;
+    color: #fff;
+}
+a{
+    color: aqua;
+    transition: color .30;
+}
+.topbar{
+    padding: 18px 0;
+    font-size: .875erm;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    max-width: 1110px;
+    margin: 0 auto; 
+    justify-content: space-between;
+}
+a:hover{
+    color: rgb(235, 33, 134);
+}
+.belleVie{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    margin: 15px 0;
+}
+
+.menu-item{
+    display: inline-block;
+    margin: 0 10px;
+}
+.menu-button{
+    border: solid 1px rgb(75, 80, 2);
+    padding: 8px 10px;
+}
+
+.baseline{
+    padding: 125px 0 230px 0; 
+    text-align: center;
+}
+.welcome{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(218, 233, 3);
+    font-size: 3.75em;
+    display: block;
+    line-height: 1;
+}
+.nom{
+    display: block;
+    font-family:'Times New Roman';
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 5px ;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 8px;
+    
+}
+.slogan{
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: block;
+    text-transform: uppercase;
+}
+.menu{
+    margin-left: auto;
+}
+
+
+.container-small{
+    background: top 40px right 0px url(../IMAGES/oranges.jpg) no-repeat;
+    margin: auto;
+    padding: 20px;
+    max-width: 960px;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.title{
+    font-size: 1.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    margin: 1rem 0 0 0;
+    margin-bottom: .5rem;
+}
+.title span{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(218, 233, 3);
+    font-size: 2.5rem;
+    display: block;
+    text-transform: none;
+}
+.title::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #c89446;
+    margin-bottom: 20px;
+}
+.more{
+    color: #c89446;
+    text-decoration: none;
+    display: block;
+    margin-top: 1.3rem;
+}
+
+.more::after{
+    content: '  >';
+}
+
+.more:hover{
+    text-decoration: underline;
+}
+
+
+.block-imgL{
+    width: 350px;
+    flex: none;
+    margin-left: 30px;
+}
+
+    .block-img{
+        width: 350px;
+        flex: none;
+        margin-left: 30px;
+     }   
+
+.home-section{
+    padding-top: .01px;
+    background: top 600px left 0px url(../IMAGES/spices.jpg) no-repeat;
+}
+.block-left{
+    float: left;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (min-width:960px){
+    
+    .block-img{
+        border: none;
+        position: relative;
+        margin-left: 30px;
+    }
+
+    .block-imgL{
+        border: none;
+        position: relative;
+        margin-left: 30px;
+    }
+
+    .block-bodyL{
+        margin-left:94px;
+    }
+
+    .title::before{
+        margin-bottom: 20px;
+    }
+
+    .title{
+        margin-bottom: 1.2rem;
+    }
+
+    .more{
+        display: block;
+        margin-top: 1.3rem;
+    }
+
+    .block-img::after{
+        content: '';
+        display: block;
+        border: solid 1px #c89446;
+        position: absolute;
+        top:  -30px;
+        right: -200px;
+        height: 100%;
+        width: 100%;
+        
+
+        transform: translate(-50%,0px) ;
+    }
+
+    .block-imgL::after{
+        content: '';
+        display: block;
+        border: solid 1px #c89446;
+        position: absolute;
+        top: -30px;
+        left: 140px;
+        height: 100%;
+        width: 100%;
+        transform: translate(-50%,0px) ;
+    }
+
+}
+
+img{
+    z-index: 1;
+}
+
+.block-right{
+    margin-right: 94px;
+    float: right;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+.block-body{
+    order: -1;
+}
+
+.title1{
+    font-size: 1.75rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+
+}
+.title1 span{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(218, 233, 3);
+    font-size: 2.5rem;
+    display: block;
+    text-transform: none;
+}
+.title1::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #c89446;
+    margin-bottom: 20px;
+}
+.block-center{
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+                                                               
+}
+
+.ingredients{
+    font-weight: 600;
+    color: #383838;
+    text-align: center;
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.ingredients:hover{
+    color: #383838;
+    text-decoration: none;
+}
+
+.active2{
+    display: inline-block;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(4, 56, 124);
+    text-decoration: underline;
+    text-decoration-color: #c89446;
+    margin-top: 20px;
+}
+.active2:hover{
+    color: #220101;
+}
+/* partie menu */
+
+.container{
+    margin: auto;
+    padding: 20px;
+    max-width: 1150px;
+}
+.menu-summary{
+    padding: 85px 0;
+    padding-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.menu-summary::before{
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    width: 420px;
+    height: 420px;
+    border: solid 1px #c89446;
+    transform: translate(-50%,-260px) rotate(45deg);
+
+}
+
+.summary-item{
+    padding-left: 192px;
+    margin-bottom: 100px;
+    width: 50%;
+    position: relative;
+}
+
+.menu-summary .summary-item:nth-child(2n){
+    text-align: right;
+    padding-left: 0;
+    padding-right: 192px;
+}
+
+.menu-summary .summary-item:nth-child(2n) .summary-img{
+    left: auto;
+    right: 0;
+}
+
+.summary-title{
+    font-size: 1.125rem;
+    color: #383838;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+    margin-top: 0;
+    background: #fff;
+}
+
+.menu-summary p{
+    margin-top: 0;
+    font-size: 0.875rem;
+    background: #fff;
+}
+
+.summary-img{
+    width: 160px;
+    position: absolute;
+    top: 5;
+    left: 0;
+}
+
+.price{
+    font-family: 'Times New Roman', Times, serif;
+    color: #c89446;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin-top: 1.4rem;
+    width: 85px;
+}
+
+.chef{
+    display: flex;
+    align-items: center;
+    float: left;
+    align-items: center;   
+}
+
+
+.block-imgC{
+    position: relative;
+    margin-left: 30px;
+
+}
+
+.block-centered{
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;   
+    width: 100%;
+    height: 120vh;                                           
+}
+.chef{
+    margin-left: 40px;
+    margin: bottom 0px;
+}
+
+.title2 span{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(218, 233, 3);
+    font-size: 2.5rem;
+    display: block;
+    text-transform: none;
+}
+.title2::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 2px;
+    background: #c89446;
+    margin-bottom: 20px;
+}
+.block-centered{
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+                                                               
+}
+
+/*  RESERVATION  */
+.reservations{
+    position: absolute;
+    background-image: url(../IMAGES/reservation.jpg);
+    color: #fff;
+    background-size: cover;
+    justify-content: center;
+    margin-top: 300px;
+    padding-top: -40px;
+    text-align: center;
+    padding-bottom: 100px;
+    color: rgba(255, 255, 255, 0.6);
+} 
+
+.reservations input,  .reservations select{
+    padding: 0.1rem;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 64px;
+  margin-bottom: 64px;
+  font-size: 0.875rem;
+  color: #fff;
+  border: solid 1px #6f6f6f;
+  background: transparent;
+  text-transform: uppercase;
+  height: 40px;
+  font-family: 'source sans pro', serif;
+  transition: background-color -3s, boder-color .3s;
+  border-radius: 4px;
+}
+
+.persons:focus{
+   background: rgba(255, 255, 255, .1);
+   border-color: #c89446;
+}
+
+.reservations input:focus {
+   background: rgba(255, 255, 255, .1);
+   border-color: #c89446;
+}
+
+select option{
+    color: #000;
+}
+
+.reservations p{
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reservations .title2{
+color: #fff;
+}
+
+.button{
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    background: #c89446;
+    border: none;
+    padding: 11px 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .3s;
+    width: 200px;
+    height: 45px;
+    border-radius: 8px;
+}
+
+.button:hover{
+    color: #c89446;
+    border: solid 1px #c89446;
+    background: transparent;
+    font-size: 18px;
+}
+
+.reservations-form-row{
+    margin: 64px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Recettes */
+
+.recipes{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    margin-top: 985px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    max-width: 1150px;
+    background: top left url(../IMAGES/news-bg.jpg) no-repeat;
+}
+
+.recipes .title{
+    text-align: right;
+}
+
+.recipes-list-item{
+    display: flex;
+    border-bottom: solid 1px #f2f2f2;
+    margin-top: 1em;
+    margin-left: 40px; 
+}
+
+.recipes-list-item p{
+    margin-top: 0;
+}
+
+.recipes-list{ 
+    max-width: 920px;
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-left: auto;
+}
+
+.recipes-list:last-child{
+border-bottom: 0;
+padding-bottom: 0;
+}
+.recipes-list strong{
+    color: #383838;
+    font-weight: bold;
+}
+
+.recipes-date strong{
+    display: flex;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.recipes-date{
+    text-align: left;
+    width: 95px;
+    flex: none;
+    line-height: 1;
+}
+
+.recipes .more{
+    display: block;
+    text-align: right;
+}
+
+.recipes .container3 > p{
+    text-align: right;
+    max-width: 710px;
+    margin-left: auto;
+}
+
+/* localisation */
+
+.location{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    padding-bottom: 40px;
+    padding-top: 80px;
+    width: 100%;
+    height: 464px;
+    background:  url(../IMAGES/localisation.jpg) center center /cover no-repeat;
+} 
+
+/* Partie footer */
+
+.footer{
+    background-image: url(../IMAGES/splash.png) ;
+    background-color: #383838;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    font-weight: 300;
+    color: #fff;
+    padding: 40px 0;
+}
+
+
+.footer-title{
+    color: #c89446;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 1.25em;
+}
+
+.footer-columns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column{
+    width: 290px;
+    margin-bottom: 1.25rem;
+    margin-right: 50px;
+}
+
+.footer-column:first-child{
+    width: 450px;
+    margin-left: 40px;
+}
+
+.footer-column:last-child{
+    width:380px ;
+    margin-right: 5px;
+}
+
+.footer ul{
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer ul li::before{
+    content: '*';
+}
+
+.footer a:hover{
+    color: #c89446;
+}
+
+.footer-credits{
+    font-size: 0.8em;
+}
+
+.footer-credits span{
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+
+.me{
+    text-align: right;
+}
+
+/*===================partie recette==========*/
+.block-ingredients{
+    height: 350px;
+    border: solid 1px #c89446;
+    padding: 35px 40px;
+    width: 700px;
+    font-weight: 600;
+    color: #383838;
+}
+
+.block-ingredients ul{ 
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.block-ingredients li{
+padding: 12px 0;
+}
+
+.block-ingredients span{
+    width: 35px;
+    text-align: right;
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: 300;
+}
+
+.section-overflow{
+    padding: 0;
+    margin-top: -40px;
+}
+
+.block-right .block-video{
+    width: 700px;
+    margin-left: 20px;
+}
+
+.block-video{
+    text-align: center;
+    position: relative;
+    background: #383838;
+}
+
+.block-video::after{
+    content: '';
+    background: url(../IMAGES/play.png) center center no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: transform .3s;
+}
+
+.block-video:hover::after{
+    background-size: 70px 70px;
+}
+
+.block-video img{
+    box-shadow: 0 0 30px rgba(128, 128, 128, 0.5);
+    opacity: 0.6;
+    display: block;
+}
+
+.recipes-mosaic p{
+    margin: 0;
+}
+.recipes-mosaic{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.recipes-mosaic .summary-item{
+    width: calc(50%-25px);
+}
+
+.recipes-mosaic .summary-item{
+    margin-bottom: 60px;
+    padding-left: 150px;
+    font-size: 0.875rem;
+}
+
+.recipes-mosaic .summary-img{
+    width: 125px;
+}
+
+/*========================*/
+.header-recette{
+    background-image: url(../IMAGES/salad-chicken.jpg);
+    background-color: #383838;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000;
+}
+
+.pagination{
+    list-style: none;
+    margin: 80px 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #c89446;
+}
+
+.pagination li{
+    display: inline-block;
+}
+.pagination a{
+    border: solid 1px #c89446;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-indent: -3000px;
+    transition: background-color .3s;
+    margin: 0 15px;
+}
+
+.pagination a :hover{
+    border: solid 1px #035511;
+    background: #c89446;
+}
+
+.act{
+    background-color: #c89446;
+}
+
+.header-recette a{
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+}

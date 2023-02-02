@@ -17,7 +17,7 @@ body{
     color: #fff;
 }
 a{
-    color: aqua;
+    color: #fff;
     transition: color .30;
 }
 .topbar{
@@ -31,15 +31,16 @@ a{
     justify-content: space-between;
 }
 a:hover{
-    color: rgb(235, 33, 134);
+    color: #c89446;
 }
 .belleVie{
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 14px;
-    color: #fff;
+    font-size: 16px;
+    color: rgb(218, 233, 3);
     display: inline-block;
     margin: 15px 0;
+    padding-left: 20px;
 }
 
 .menu-item{
@@ -427,10 +428,9 @@ img{
 /*  RESERVATION  */
 .reservations{
     position: absolute;
-    background-image: url(../IMAGES/reservation.jpg);
+    background: url(../IMAGES/reservation.jpg) center center / cover no-repeat;
+    width: 100%;
     color: #fff;
-    background-size: cover;
-    justify-content: center;
     margin-top: 300px;
     padding-top: -40px;
     text-align: center;
@@ -748,7 +748,7 @@ justify-content: space-between;
 
 /*========================*/
 .header-recette{
-    background-image: url(../IMAGES/salad-chicken.jpg);
+    background-image: url(../IMAGES/greens_1002.jpg);
     background-color: #383838;
     background-position: center;
     background-repeat: no-repeat;
@@ -792,4 +792,17 @@ justify-content: space-between;
     font-size: 16px;
     font-weight: bold;
     color: #fff;
+}
+.logo .belle-vie{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: rgb(10, 10, 0);
+    display: inline-block;
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+.menu a:hover{
+    color:#130e01;
 }
